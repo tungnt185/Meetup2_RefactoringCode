@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C4E4B42A-47E4-4394-879B-9F357A3EA014}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MU2.RefactorCode</RootNamespace>
+    <AssemblyName>MU2.RefactorCode</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="15.PreventGodClass\After.cs" />
+    <Compile Include="15.PreventGodClass\Before.cs" />
+    <Compile Include="03.ExtractMethod\After.cs" />
+    <Compile Include="03.ExtractMethod\Before.cs" />
+    <Compile Include="09.ExtractFactory\After.cs" />
+    <Compile Include="09.ExtractFactory\Before.cs" />
+    <Compile Include="06.ExceptionToConditional\After.cs" />
+    <Compile Include="06.ExceptionToConditional\Before.cs" />
+    <Compile Include="04.EncapsulateConditional\After.cs" />
+    <Compile Include="04.EncapsulateConditional\Before.cs" />
+    <Compile Include="09.SwitchToPolymorphism\After.cs" />
+    <Compile Include="09.SwitchToPolymorphism\Before.cs" />
+    <Compile Include="05.ExtractInterface\After.cs" />
+    <Compile Include="05.ExtractInterface\Before.cs" />
+    <Compile Include="06.BreakDependencies\After.cs" />
+    <Compile Include="06.BreakDependencies\Before.cs" />
+    <Compile Include="18.RemoveDoubleNegative\After.cs" />
+    <Compile Include="18.RemoveDoubleNegative\Before.cs" />
+    <Compile Include="17.DesignByContractCheck\After.cs" />
+    <Compile Include="17.DesignByContractCheck\Before.cs" />
+    <Compile Include="16.RemoveMultipleIf\After.cs" />
+    <Compile Include="16.RemoveMultipleIf\Before.cs" />
+    <Compile Include="19.ParameterObject\After.cs" />
+    <Compile Include="19.ParameterObject\Before.cs" />
+    <Compile Include="10.BreakResponsibility\After.cs" />
+    <Compile Include="10.BreakResponsibility\Before.cs" />
+    <Compile Include="02.RemoveDuplication\After.cs" />
+    <Compile Include="02.RemoveDuplication\Before.cs" />
+    <Compile Include="10.ExtractMethod\After.cs" />
+    <Compile Include="10.ExtractMethod\Before.cs" />
+    <Compile Include="21.ReplaceInheritance\After.cs" />
+    <Compile Include="21.ReplaceInheritance\Before.cs" />
+    <Compile Include="20.EncapsulateCollection\After.cs" />
+    <Compile Include="20.EncapsulateCollection\Before.cs" />
+    <Compile Include="01.Rename\After.cs" />
+    <Compile Include="01.Rename\Before.cs" />
+    <Compile Include="10.PutdownMethod\After.cs" />
+    <Compile Include="10.PutdownMethod\Before.cs" />
+    <Compile Include="10.PullupMethod\After.cs" />
+    <Compile Include="10.PullupMethod\Before.cs" />
+    <Compile Include="10.MoveMethod\After.cs" />
+    <Compile Include="10.MoveMethod\Before.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
