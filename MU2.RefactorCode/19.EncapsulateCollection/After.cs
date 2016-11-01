@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace MU2.RefactorCode.EncapsulateCollection
 {
+    /// <summary>
+    /// Kỹ thuật này đảm bảo các class sử dụng order không thay đổi OrderLines một cách không chính xác có thể dẫn đến lỗi
+    /// Đảm bảo nguyên tắc đóng gói của OOP
+    /// </summary>
     public class Order
     {
         private List<OrderLine> _orderLines;

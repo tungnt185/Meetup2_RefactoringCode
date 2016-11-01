@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace MU2.RefactorCode.EncapsulateConditional
 {
+    /// <summary>
+    /// Kỹ thuật này giúp làm rõ mục đích của biểu thức điều kiện và có thể kiểm tra được ngay giá trị trả về của điều kiện.
+    /// Cách thường dùng là tách biểu thức điều kiện ra một property hoặc function
+    /// </summary>
     public class RemoteControl
     {
         private string[] Functions { get; set; }

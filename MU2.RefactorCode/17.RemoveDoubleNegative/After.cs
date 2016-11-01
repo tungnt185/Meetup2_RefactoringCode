@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace MU2.RefactorCode.RemoveDoubleNegative
 {
+    /// <summary>
+    /// Kỹ thuật này làm code trở nên dễ hiểu hơn, tránh hiểu nhầm dẫn đến side effect
+    /// </summary>
     public class Order
     {
         public void Checkout(IEnumerable<Product> products, Customer customer)

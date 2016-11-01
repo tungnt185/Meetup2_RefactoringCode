@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace MU2.RefactorCode.RemoveDuplication
 {
+    /// <summary>
+    /// Là một trong những lỗi hay gặp nhất của dev.
+    /// Cần refactor để sử dụng hàm chung tránh việc code dư thừa khó maintain sau này
+    /// </summary>
     public class MedicalRecord
     {
         public DateTime DateArchived { get; private set; }

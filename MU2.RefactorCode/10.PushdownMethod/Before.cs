@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MU2.RefactorCode.PutdownMethod
+namespace MU2.RefactorCode.PushdownMethod
 {
     public abstract class AnimalBefore
     {

@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace MU2.RefactorCode.BreakDependencies
 {
+    /// <summary>
+    /// Kỹ thuật này chính là kỹ thuật extract interface giải quyết bài toán khi dependency là các static function
+    /// </summary>
     public class AnimalFeedingService
     {
         public IFeederService FeederService { get; set; }

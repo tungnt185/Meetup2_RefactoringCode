@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace MU2.RefactorCode.Rename
 {
-    // Changed the class name to Employee
+    /// <summary>
+    /// Đổi tên class, property, function cho rõ ràng dễ đọc, dễ bảo trì sau này
+    /// </summary>
     public class Employee
     {
         public string FirstName { get; set; }

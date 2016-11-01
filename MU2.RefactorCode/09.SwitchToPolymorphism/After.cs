@@ -6,6 +6,12 @@ using System.Threading.Tasks;
 
 namespace MU2.RefactorCode.SwitchToPolymorphism
 {
+    /// <summary>
+    /// Áp dụng cho các switch lớn thay đổi liên tục khi có những điều kiện mới thêm vào.
+    /// Sử dụng strategy pattern để đóng gói các condition thành từng class riêng.
+    /// Việc này giúp cho class sử dụng nó không cần thay đổi khi bổ sung thêm điều kiện
+    /// Như ở đây chỉ cần thêm implementation và thêm vào config dictionary
+    /// </summary>
     public class ClientCode
     {
         public decimal CalculateShipping()

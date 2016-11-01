@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace MU2.RefactorCode.MoveMethod
 {
+    /// <summary>
+    /// Sử dụng kỹ thuật này khi một class khác sử dụng một phương thức nhiều hơn class chứa phương thức đó
+    /// VD ở đây là hàm CalculateInterestRate()
+    /// </summary>
     public class BankAccount
     {
         public BankAccount(int accountAge, int creditScore,

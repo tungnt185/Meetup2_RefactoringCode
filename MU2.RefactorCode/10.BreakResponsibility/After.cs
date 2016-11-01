@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace MU2.RefactorCode.BreakResponsibility
 {
+    /// <summary>
+    /// Tuân thủ nguyên lý SRP Single Responsibility Principle
+    /// Mỗi class chỉ nên có một lý do để thay đổi, hay mỗi class chỉ nên phục vụ một mục đích nào đó, không thực hiện nhiệm vụ của class khác
+    /// </summary>
     public class Video
     {
         public void RentVideo(Video video, Customer customer)

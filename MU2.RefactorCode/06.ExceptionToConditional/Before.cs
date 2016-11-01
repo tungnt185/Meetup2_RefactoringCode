@@ -9,8 +9,6 @@ namespace MU2.RefactorCode.ExceptionToConditional
 {
     public class MicrowaveBefore
     {
-        private bool foodcooked;
-
         private IMicrowaveMotor Motor { get; set; }
 
         public bool Start(object food)
@@ -23,13 +21,11 @@ namespace MU2.RefactorCode.ExceptionToConditional
             }
             catch (InUseException)
             {
-                foodcooked = false;
+                foodCooked = false;
             }
 
             return foodCooked;
         }
-
-       
     }
 
     public interface IMicrowaveMotor

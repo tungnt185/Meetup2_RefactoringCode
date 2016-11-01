@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace MU2.RefactorCode.PreventGodClass
 {
+    /// <summary>
+    /// Phân tách các class theo đúng responsibility để giúp cho việc maintain dễ dàng hơn
+    /// </summary>
     public class CustomerOrderService
     {
         public decimal CalculateOrderDiscount(IEnumerable<Product> products,

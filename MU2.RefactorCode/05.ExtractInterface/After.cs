@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace MU2.RefactorCode.ExtractInterface
 {
+    /// <summary>
+    /// Kỹ thuật này giúp code trở nên rất linh hoạt dễ bảo trì mở rộng khi cần.
+    /// Giúp code loose coupling và dễ dàng áp dụng unit test khi cần
+    /// </summary>
     public interface ILogging
     {
         bool Logging();

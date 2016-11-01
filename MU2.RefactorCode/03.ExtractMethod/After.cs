@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace MU2.RefactorCode.ExtractMethod
 {
+    /// <summary>
+    /// Một trong những refactor technique giúp cho code trở nên rất rõ ràng, dễ đọc
+    /// Giảm những lỗi do không phải đoán code làm những gì nữa
+    /// </summary>
     public class Receipt
     {
         private IList<decimal> Discounts { get; set; }

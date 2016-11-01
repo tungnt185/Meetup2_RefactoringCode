@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace MU2.RefactorCode.ParameterObject
 {
+    /// <summary>
+    /// Kỹ thuật này giúp code trở nên dễ đọc, dễ bảo trì và mở rộng khi cần
+    /// </summary>
     public class RegistrationContext
     {
         public decimal Amount { get; set; }
